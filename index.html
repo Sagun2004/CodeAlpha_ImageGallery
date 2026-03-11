@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My Image Gallery</h1>
+
+<div class="gallery">
+  <img src="https://picsum.photos/id/1015/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1016/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1025/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1035/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1043/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1050/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1015/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1016/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1025/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1035/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1043/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1050/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1015/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1016/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1025/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1035/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1043/300/200" onclick="openLightbox(this)">
+  <img src="https://picsum.photos/id/1050/300/200" onclick="openLightbox(this)">
+</div>
+
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">×</span>
+  <button class="prev" onclick="changeImage(-1)">❮</button>
+  <img id="lightbox-img">
+  <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
